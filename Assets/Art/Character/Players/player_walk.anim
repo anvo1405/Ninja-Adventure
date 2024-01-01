@@ -17,21 +17,55 @@ AnimationClip:
   m_PositionCurves: []
   m_ScaleCurves: []
   m_FloatCurves: []
-  m_PPtrCurves: []
+  m_PPtrCurves:
+  - serializedVersion: 2
+    curve:
+    - time: 0
+      value: {fileID: 21300000, guid: 4f04860becc36a84abc715ff64834d13, type: 3}
+    - time: 0.016666668
+      value: {fileID: 21300000, guid: ba31350590bf365468db2b69416fd80d, type: 3}
+    - time: 0.033333335
+      value: {fileID: 21300000, guid: 18b8d88ca52f7a442bd27afc56c885dc, type: 3}
+    - time: 0.05
+      value: {fileID: 21300000, guid: 8cc46136aaa508545bbfcdcb32df1318, type: 3}
+    - time: 0.06666667
+      value: {fileID: 21300000, guid: 52d949b873cce9344b36dd0f982e4b5d, type: 3}
+    - time: 0.083333336
+      value: {fileID: 21300000, guid: 62754a092c4b718418a830eb1e6c48ad, type: 3}
+    attribute: m_Sprite
+    path: 
+    classID: 212
+    script: {fileID: 0}
+    flags: 2
   m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings: []
-    pptrCurveMapping: []
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    pptrCurveMapping:
+    - {fileID: 21300000, guid: 4f04860becc36a84abc715ff64834d13, type: 3}
+    - {fileID: 21300000, guid: ba31350590bf365468db2b69416fd80d, type: 3}
+    - {fileID: 21300000, guid: 18b8d88ca52f7a442bd27afc56c885dc, type: 3}
+    - {fileID: 21300000, guid: 8cc46136aaa508545bbfcdcb32df1318, type: 3}
+    - {fileID: 21300000, guid: 52d949b873cce9344b36dd0f982e4b5d, type: 3}
+    - {fileID: 21300000, guid: 62754a092c4b718418a830eb1e6c48ad, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 0.1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
