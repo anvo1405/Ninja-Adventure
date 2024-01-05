@@ -19,7 +19,8 @@ public class PlayerController : MonoBehaviour
     public float CurrentMoveSpeed
     {
         get { 
-            if(IsMoving && !touchingDirections.IsOnWall)
+            if(CanMove){
+                if(IsMoving && !touchingDirections.IsOnWall)
             {
                 if(touchingDirections.IsGrounded)
             {
@@ -37,6 +38,8 @@ public class PlayerController : MonoBehaviour
             }
             }
             else { return 0; }
+            } else{ return 0;}
+            
             
         }
     }
@@ -80,6 +83,13 @@ public class PlayerController : MonoBehaviour
         } }
 
     public bool _isFacingRight = true;
+
+    public bool CanMove { get
+    {
+        return animator.GetBool(AnimationStrings.canMove);
+    }
+
+    }
 
     Rigidbody2D rb;
     Animator animator;
@@ -138,13 +148,22 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if(context.started && touchingDirections.IsGrounded)
+        if(context.started && touchingDirections.IsGrounded && CanMove)
         {
-            animator.SetTrigger(AnimationStrings.jump);
+            animator.SetTrigger(AnimationStrings.jumpTrigger);
             rb.velocity = new Vector2(rb.velocity.x, jumpInpulse);
         } else if(context.canceled)
         {
             IsRunning = false;
+        }
+    }
+
+    public void OnAttack(InputAction.CallbackContext context)
+    {
+        if(context.started)
+        {
+            animator.SetTrigger(AnimationStrings.attackTrigger);
+
         }
     }
 }
