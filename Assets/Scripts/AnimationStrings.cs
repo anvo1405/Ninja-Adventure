@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 internal class AnimationStrings : MonoBehaviour
 {
     internal static string isMoving = "isMoving";
-    internal static string isRuning = "isRuning";
+    internal static string isRunning = "isRunning";
     internal static string IsGrounded = "isGrounded";
     internal static string yVelocity = "yVelocity";
     internal static string jump = "jump";

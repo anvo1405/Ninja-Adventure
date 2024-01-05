@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
         private set
         {
             _isRunning = value;
-            animator.SetBool(AnimationStrings.isRuning, value);
+            animator.SetBool(AnimationStrings.isRunning, value);
         }
     }
 
