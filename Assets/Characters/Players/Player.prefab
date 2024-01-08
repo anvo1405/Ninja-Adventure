@@ -217,7 +217,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 188689492875096040}
-  - component: {fileID: 5654372509705735249}
   m_Layer: 0
   m_Name: BowAttack
   m_TagString: Untagged
@@ -240,18 +239,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6676237716028137323}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5654372509705735249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2977680512581971427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4d2571255297d4419c4e03857fbafad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6820916639463992984
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,6 +363,7 @@ GameObject:
   - component: {fileID: 6387298878830005812}
   - component: {fileID: 5974587875180318185}
   - component: {fileID: 5059500757627543441}
+  - component: {fileID: 1091917793910873257}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -691,3 +679,17 @@ MonoBehaviour:
   _isAlive: 1
   isInvincible: 0
   invincibilityTime: 0.25
+--- !u!114 &1091917793910873257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8586961008541408008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4d2571255297d4419c4e03857fbafad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  launchPoint: {fileID: 188689492875096040}
+  projectilePrefab: {fileID: 1534143642771544627, guid: 69a5bafafe1b7784096c8e5a73c18f72, type: 3}
