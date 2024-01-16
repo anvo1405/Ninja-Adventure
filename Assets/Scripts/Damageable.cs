@@ -30,11 +30,11 @@ public class Damageable : MonoBehaviour
         get
         {
             return _health;
-            healthChanged?.Invoke(_health, MaxHealth);
         }
         set
         {
             _health = value;
+            healthChanged?.Invoke(_health, MaxHealth);
             if(_health <= 0)
             {
                 IsAlive = false;

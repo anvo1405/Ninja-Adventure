@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 523889499769679622}
   - component: {fileID: 5738001402011686652}
   - component: {fileID: 1848694957356208745}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: AirAttack2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 700507253895231851}
   - component: {fileID: 4138157611119627440}
   - component: {fileID: 408217688658264220}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: SwordAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 1197507256397322817}
   - component: {fileID: 2088067137468695289}
   - component: {fileID: 8661782633227897340}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: SwordAttack3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 188689492875096040}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BowAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 8151683277535799138}
   - component: {fileID: 1001808025397503137}
   - component: {fileID: 3127557696041720670}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: AirAttack1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -469,7 +469,7 @@ GameObject:
   - component: {fileID: 1242186529251342802}
   - component: {fileID: 4350778897852924641}
   - component: {fileID: 6205820114274693179}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: SwordAttack2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -583,9 +583,9 @@ GameObject:
   - component: {fileID: 5974587875180318185}
   - component: {fileID: 5059500757627543441}
   - component: {fileID: 1091917793910873257}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -893,6 +893,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageableHit:
+    m_PersistentCalls:
+      m_Calls: []
+  healthChanged:
     m_PersistentCalls:
       m_Calls: []
   _maxHealth: 100
