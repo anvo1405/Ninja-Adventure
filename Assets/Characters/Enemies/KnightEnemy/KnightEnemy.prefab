@@ -167,7 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38a623b34d9ba254cbce203a9f6a5455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 3
+  walkAcceleration: 1
+  maxSpeed: 2
   walkStopRate: 0.05
   attackZone: {fileID: 2223214485313719853}
   cliffDetectionZone: {fileID: 7140625381919132017}
@@ -238,6 +239,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageableHit:
+    m_PersistentCalls:
+      m_Calls: []
+  healthChanged:
     m_PersistentCalls:
       m_Calls: []
   _maxHealth: 100
@@ -525,7 +529,7 @@ PolygonCollider2D:
     - - {x: 0.52730286, y: 0.14920175}
       - {x: 0.3823283, y: 0.23886412}
       - {x: 0.18252918, y: 0.22291423}
-      - {x: 0.08604765, y: 0.19878408}
+      - {x: -0.053662673, y: 0.17351879}
       - {x: 0.16220224, y: 0.083751865}
       - {x: 0.15896446, y: 0.029257469}
       - {x: 0.20686215, y: -0.03682435}
